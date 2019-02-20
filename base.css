@@ -1,0 +1,134 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+header {
+  background: lightblue;
+  display: flex;
+}
+
+.title {
+  display: inline-block;
+  overflow: hidden;
+  width: 75%;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  animation: move 15s linear infinite;
+}
+
+@keyframes move {
+  0% {transform: translateX(280%);}
+  100% {transform: translateX(-100%);}
+}
+
+h2 {
+  text-align: center;
+}
+
+header button {
+  border-style: none;
+  background-color: transparent;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+select {
+  border-style: none;
+  background-color: transparent;
+  height: 30px;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+option {
+  display: block !important;
+  width: 100;
+}
+
+section {
+  width: 75%;
+}
+article {
+  background: white;
+  box-shadow: 1px 1px 12px lightgray;
+  margin: 0 0 1rem 0;
+  min-width: 490px;
+  max-height: 490px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 5px;
+
+}
+aside {
+  width: 25%;
+}
+
+header, article, section, .module {
+  padding: 1rem;
+}
+
+.content {
+  display: -webkit-flex;
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.frame {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.param-name, .param-result {
+  display: inline-block;
+}
+
+.param-name {
+  width: 70%;
+  animation: showName 5s linear
+}
+
+@keyframes showName {
+  0% {transform: translateX(-200%);}
+  100% {transform: translateX(0%);}
+}
+
+.param-result {
+  width: 28%;
+  animation: showResult 5s linear;
+}
+
+@keyframes showResult {
+  0% {transform: translateX(250%);}
+  100% {transform: translateX(0%);}
+}
+
+.module {
+  box-shadow: 0 0 15px 0;
+  color: lightgrey;
+  border-radius: 5px;
+  margin-top: 18px;
+}
+
+.module h3 {
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 5px lightgray;
+  font-size: 2em;
+}
+
+.module h4 {
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 5px lightgray;
+  font-size: 1.5em;
+  margin: 10px auto 10px auto;
+}
