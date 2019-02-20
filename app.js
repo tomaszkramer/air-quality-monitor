@@ -53,7 +53,11 @@
         
       }
       let myHeight = $('article').height();
-      if(myHeight > 300) $('article').addClass('scroll');
+      let rect;
+      let art = document.querySelector('article');
+      rect = art.getBoundingClientRect();
+      console.log(rect);
+      if(rect.bottom > 600) $('article').addClass('scroll');
     })
     .then(fetchParamName(element[key]))
     .catch(err=>{
