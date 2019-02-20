@@ -61,10 +61,14 @@ article {
   min-width: 490px;
   max-height: 490px;
   overflow: hidden;
-  overflow-y: scroll;
   border-radius: 5px;
 
 }
+
+.scroll {
+  overflow-y: scroll;
+}
+
 aside {
   width: 25%;
 }

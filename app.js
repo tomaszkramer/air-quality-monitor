@@ -50,7 +50,10 @@
           <p class = "param-result">${contents[paramIdx].indexLevelName}</p>
           </div>`);
         }
+        
       }
+      let myHeight = $('article').height();
+      if(myHeight > 300) $('article').addClass('scroll');
     })
     .then(fetchParamName(element[key]))
     .catch(err=>{
